@@ -1,0 +1,64 @@
+#root {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.app-container {
+    min-height: 100vh;
+}
+
+/* Ajuster le padding-top pour compenser la navbar fixe */
+.app-container > *:not(nav) {
+    padding-top: 100px;
+}
+
+/* Classes personnalisées pour delay d'animation */
+.delay-0 {
+  animation-delay: 0s;
+}
+.delay-2000 {
+  animation-delay: 2s;
+}
+.delay-4000 {
+  animation-delay: 4s;
+}
+h1, h2,nav {
+  font-family: "Rubik Dirt", system-ui;
+}
