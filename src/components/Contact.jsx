@@ -22,7 +22,7 @@ const Contact = () => {
                 <input
                   type="text"
                   id="name"
-                  className="w-full px-4 py-3 rounded-lg border-2 border-gray-200 dark:border-gray-700 focus:border-[#8B0000] focus:ring focus:ring-[#8B0000] focus:ring-opacity-50 transition-all duration-300 outline-none dark:bg-gray-700 dark:text-white"
+                  className="w-full px-4 py-3 rounded-lg border-2 border-gray-200 dark:border-gray-700 focus:border-[#8B0000] focus:ring focus:ring-[#8B0000] focus:ring-opacity-50 transition-all duration-300 outline-none dark:bg-gray-700 text-white dark:text-white placeholder:text-white"
                   placeholder="Votre nom"
                 />
               </div>
@@ -31,17 +31,17 @@ const Contact = () => {
                 <input
                   type="email"
                   id="email"
-                  className="w-full px-4 py-3 rounded-lg border-2 border-gray-200 dark:border-gray-700 focus:border-[#8B0000] focus:ring focus:ring-[#8B0000] focus:ring-opacity-50 transition-all duration-300 outline-none dark:bg-gray-700 dark:text-white"
+                  className="w-full px-4 py-3 rounded-lg border-2 border-gray-200 dark:border-gray-700 focus:border-[#8B0000] focus:ring focus:ring-[#8B0000] focus:ring-opacity-50 transition-all duration-300 outline-none dark:bg-gray-700 text-white dark:text-white placeholder:text-white"
                   placeholder="Votre email"
                 />
               </div>
               <div className="mb-6">
-                <label htmlFor="subject" className="block text-gray-700 dark:text-gray-300 mb-2">Sujet</label>
+                <label htmlFor="phone" className="block text-gray-700 dark:text-gray-300 mb-2">Téléphone</label>
                 <input
-                  type="text"
-                  id="subject"
-                  className="w-full px-4 py-3 rounded-lg border-2 border-gray-200 dark:border-gray-700 focus:border-[#8B0000] focus:ring focus:ring-[#8B0000] focus:ring-opacity-50 transition-all duration-300 outline-none dark:bg-gray-700 dark:text-white"
-                  placeholder="Sujet de votre message"
+                  type="tel"
+                  id="phone"
+                  className="w-full px-4 py-3 rounded-lg border-2 border-gray-200 dark:border-gray-700 focus:border-[#8B0000] focus:ring focus:ring-[#8B0000] focus:ring-opacity-50 transition-all duration-300 outline-none dark:bg-gray-700 text-white dark:text-white placeholder:text-white"
+                  placeholder="Votre numéro de téléphone"
                 />
               </div>
               <div className="mb-6">
@@ -49,7 +49,7 @@ const Contact = () => {
                 <textarea
                   id="message"
                   rows={5}
-                  className="w-full px-4 py-3 rounded-lg border-2 border-gray-200 dark:border-gray-700 focus:border-[#8B0000] focus:ring focus:ring-[#8B0000] focus:ring-opacity-50 transition-all duration-300 outline-none dark:bg-gray-700 dark:text-white"
+                  className="w-full px-4 py-3 rounded-lg border-2 border-gray-200 dark:border-gray-700 focus:border-[#8B0000] focus:ring focus:ring-[#8B0000] focus:ring-opacity-50 transition-all duration-300 outline-none dark:bg-gray-700 text-white dark:text-white placeholder:text-white"
                   placeholder="Votre message"
                 ></textarea>
               </div>
