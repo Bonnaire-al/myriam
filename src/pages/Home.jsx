@@ -55,7 +55,7 @@ const Home = () => {
   <div className="absolute inset-0 z-0 w-full">
     <div className="absolute inset-0 bg-gradient-to-r from-[#8B0000]/80 to-transparent z-10"></div>
     <img
-      src="/public/Finanace-overview-header-round-pngop.png"
+      src="/public/images/Finanace-overview-header-round-pngop.png"
       alt="Économiste professionnelle"
       className="w-full h-full object-cover object-center min-h-screen"
     />
@@ -182,7 +182,7 @@ const Home = () => {
                   className="bg-white dark:bg-gray-800 p-4 rounded-lg shadow-lg opacity-0 translate-y-10"
                 >
                   <img 
-                    src="/public/OIP.2.webp" 
+                    src="/public/images/OIP.2.webp" 
                     alt="reunion" 
                     className="w-full h-auto rounded-lg object-cover"
                   />
@@ -192,7 +192,7 @@ const Home = () => {
                   className="bg-white dark:bg-gray-800 p-4 rounded-lg shadow-lg opacity-0 translate-y-10"
                 >
                   <img 
-                    src="/public/OIP-_1_.webp" 
+                    src="/public/images/OIP-_1_.webp" 
                     alt="educatrice" 
                     className="w-full h-auto rounded-lg object-cover"
                   />
