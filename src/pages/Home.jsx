@@ -61,11 +61,11 @@ const Home = () => {
     />
   </div>
   <div className="w-full relative z-20 p-0 m-0">
-    <div className="max-w-2xl text-white ml-4 mt-0 md:mt-4">
+    <div className="max-w-2xl text-black md:text-white ml-4 mt-0 md:mt-4">
       <h1 className="text-3xl sm:text-4xl md:text-3xl lg:text-5xl font-bold mb-16 md:mb-12 opacity-0 animate-slideInRight delay-0">
         Bienvenue dans mon portefolio
       </h1>
-      <p className="text-sm sm:text-base md:text-lg mb-20 md:mb-16 text-[#FFE4E1] opacity-0 animate-fadeIn delay-2000">
+      <p className="text-sm sm:text-base md:text-lg mb-20 md:mb-16 text-gray-800 md:text-[#FFE4E1] opacity-0 animate-fadeIn delay-2000">
         Jeune diplômée d'une licence en gestion de la protection sociale, je suis formée aux aspects réglementaires et aux techniques de gestion administrative des régimes sociaux. J'ai acquis des compétences solides en relation client, en traitement des dossiers et en analyse des dispositifs de protection.
       </p>
       <div className="flex space-x-3 mt-20 md:mt-16 mb-2 md:mb-4 opacity-0 animate-slideInUp delay-4000">
@@ -77,7 +77,7 @@ const Home = () => {
         </Link>
         <Link
           to="/contact"
-          className="bg-transparent border-2 border-white text-white px-4 py-2 text-xs sm:text-sm rounded-lg hover:bg-white hover:text-[#8B0000] transition-all duration-300"
+          className="bg-transparent border-2 border-black md:border-white text-black md:text-white px-4 py-2 text-xs sm:text-sm rounded-lg hover:bg-black md:hover:bg-white hover:text-white md:hover:text-[#8B0000] transition-all duration-300"
         >
           Me contacter
         </Link>
