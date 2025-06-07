@@ -8,14 +8,14 @@ const Projet = () => {
       title: "Découverte d'une Cuisine Saine et Solidaire",
       description: "Dans le cadre de ma formation, j'ai mis en place une activité culinaire au sein d'un centre social, destinée à encourager de meilleures habitudes alimentaires tout en favorisant l'échange et la convivialité entre les participants",
       longDescription: "Dans le cadre de mon BTS ESF, j'ai organisé un atelier cuisine au centre social où j'étais en stage. L'objectif était de sensibiliser les familles en difficulté à l'alimentation saine, en utilisant une approche ludique et interculturelle à travers la cuisine du monde. Pour cela, j'ai conçu un questionnaire, que j'ai fait circuler auprès des habitants afin de connaître leurs habitudes et leurs attentes. Ensuite, j'ai préparé l'atelier de A à Z : choix d'une recette simple et accessible, préparation des ingrédients, organisation logistique, et création d'outils de communication (affiches, annonces). Le jour de l'atelier, j'ai animé la séance avec les enfants, dans une ambiance conviviale. L'action a été bien accueillie par les familles et a permis de créer du lien tout en •abordant des questions d'équilibre alimentaire.",
-      image: "../assets/images/barbecue_bbq_feast_grilling_hands_healthy_salad_summer-1609307.webp",
+      image: "/images/barbecue_bbq_feast_grilling_hands_healthy_salad_summer-1609307.webp",
       tags: ["Organisation d'activités", "Gestion logistique", "Esprit d'analyse"]
     },
     {
       title: "Loisirs et Lien Social",
       description: "Projet mené en stage au CADA visant à favoriser l'intégration de jeunes récemment arrivés, en leur faisant découvrir les activités de loisirs locales comme vecteur de lien social.",
       longDescription: "Lors de ma première année de BTS, j'ai effectué un stage au Cada où j'ai mené un projet axé sur l'accompagnement des jeunes dans leur insertion sociale. L'objectif était de leur présenter les activités de loisirs comme un moyen d'intégration dans une nouvelle ville, puisque ces jeunes venaient d'arriver et ne connaissaient encore personne. J'ai organisé un atelier pour leur faire découvrir les différentes possibilités de loisirs et les accueils de loisirs disponibles dans la ville. Cet atelier a permis de faciliter les échanges entre les jeunes et de les encourager à s'impliquer dans la vie locale.",
-      image: "../assets/images/integration-2489607_960_720.webp",
+      image: "/images/integration-2489607_960_720.webp",
       tags: ["Animation d'atelier", "Gestion de projet", "Communication"]
     },
     {
@@ -37,7 +37,7 @@ const Projet = () => {
 
                      ésultat :
 Une meilleure répartition des missions, des procédures de travail clarifiées, et un dialogue renforcé entre la direction et les agents. Le projet a contribué à fluidifier les échanges et à améliorer la cohésion d'équipe.`,
-      image: "../assets/images/OIP.webp",
+      image: "/images/OIP.webp",
       tags: ["Travail en équipe", "Observation", "Suivi administratif"]
     }
   ];
