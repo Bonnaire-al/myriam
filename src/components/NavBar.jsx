@@ -6,6 +6,13 @@ const NavBar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const location = useLocation();
 
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  };
+
   useEffect(() => {
     const handleScroll = () => {
       const aboutSection = document.getElementById('about-section');
@@ -42,19 +49,20 @@ const NavBar = () => {
           className={`text-2xl font-bold transition-colors duration-300 ${
             shouldBeTransparent ? 'text-white' : 'text-[#8B0000]'
           }`}
+          onClick={scrollToTop}
         >
           Bonnaire Myriam
         </Link>
 
         {/* Desktop Nav */}
         <nav className="hidden md:flex space-x-8 items-center">
-          <Link to="/" className={navLinkClass('/')}>
+          <Link to="/" className={navLinkClass('/')} onClick={scrollToTop}>
             Accueil
           </Link>
-          <Link to="/projets" className={navLinkClass('/projets')}>
+          <Link to="/projets" className={navLinkClass('/projets')} onClick={scrollToTop}>
             Projets
           </Link>
-          <Link to="/contact" className={navLinkClass('/contact')}>
+          <Link to="/contact" className={navLinkClass('/contact')} onClick={scrollToTop}>
             Contact
           </Link>
         </nav>
@@ -92,21 +100,30 @@ const NavBar = () => {
           <Link
             to="/"
             className={navLinkClass('/')}
-            onClick={() => setIsMenuOpen(false)}
+            onClick={() => {
+              setIsMenuOpen(false);
+              scrollToTop();
+            }}
           >
             Accueil
           </Link>
           <Link
             to="/projets"
             className={navLinkClass('/projets')}
-            onClick={() => setIsMenuOpen(false)}
+            onClick={() => {
+              setIsMenuOpen(false);
+              scrollToTop();
+            }}
           >
             Projets
           </Link>
           <Link
             to="/contact"
             className={navLinkClass('/contact')}
-            onClick={() => setIsMenuOpen(false)}
+            onClick={() => {
+              setIsMenuOpen(false);
+              scrollToTop();
+            }}
           >
             Contact
           </Link>

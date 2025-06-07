@@ -8,22 +8,37 @@ const Projet = () => {
       title: "Découverte d'une Cuisine Saine et Solidaire",
       description: "Dans le cadre de ma formation, j'ai mis en place une activité culinaire au sein d'un centre social, destinée à encourager de meilleures habitudes alimentaires tout en favorisant l'échange et la convivialité entre les participants",
       longDescription: "Dans le cadre de mon BTS ESF, j'ai organisé un atelier cuisine au centre social où j'étais en stage. L'objectif était de sensibiliser les familles en difficulté à l'alimentation saine, en utilisant une approche ludique et interculturelle à travers la cuisine du monde. Pour cela, j'ai conçu un questionnaire, que j'ai fait circuler auprès des habitants afin de connaître leurs habitudes et leurs attentes. Ensuite, j'ai préparé l'atelier de A à Z : choix d'une recette simple et accessible, préparation des ingrédients, organisation logistique, et création d'outils de communication (affiches, annonces). Le jour de l'atelier, j'ai animé la séance avec les enfants, dans une ambiance conviviale. L'action a été bien accueillie par les familles et a permis de créer du lien tout en •abordant des questions d'équilibre alimentaire.",
-      image: "/public/images/barbecue_bbq_feast_grilling_hands_healthy_salad_summer-1609307.webp",
+      image: "../assets/images/barbecue_bbq_feast_grilling_hands_healthy_salad_summer-1609307.webp",
       tags: ["Organisation d'activités", "Gestion logistique", "Esprit d'analyse"]
     },
     {
       title: "Loisirs et Lien Social",
       description: "Projet mené en stage au CADA visant à favoriser l'intégration de jeunes récemment arrivés, en leur faisant découvrir les activités de loisirs locales comme vecteur de lien social.",
       longDescription: "Lors de ma première année de BTS, j'ai effectué un stage au Cada où j'ai mené un projet axé sur l'accompagnement des jeunes dans leur insertion sociale. L'objectif était de leur présenter les activités de loisirs comme un moyen d'intégration dans une nouvelle ville, puisque ces jeunes venaient d'arriver et ne connaissaient encore personne. J'ai organisé un atelier pour leur faire découvrir les différentes possibilités de loisirs et les accueils de loisirs disponibles dans la ville. Cet atelier a permis de faciliter les échanges entre les jeunes et de les encourager à s'impliquer dans la vie locale.",
-      image: "/public/images/integration-2489607_960_720.webp",
+      image: "../assets/images/integration-2489607_960_720.webp",
       tags: ["Animation d'atelier", "Gestion de projet", "Communication"]
     },
     {
-      title: "Entrepreneuriat Social et Innovation",
-      description: "Analyse des facteurs de succès des entreprises sociales et de leur impact sur l'économie locale.",
-      longDescription: "Cette recherche approfondie examine les facteurs clés qui contribuent au succès des entreprises sociales. J'ai étudié plusieurs cas d'entreprises innovantes et leur impact sur l'économie locale. L'analyse révèle l'importance de l'équilibre entre viabilité économique et impact social.",
-      image: "https://readdy.ai/api/search-image?query=Social%20entrepreneurship%20concept%20with%20diverse%20group%20of%20people%20collaborating%20on%20economic%20solutions%2C%20innovation%20hub%20atmosphere%2C%20digital%20tools%20and%20social%20impact%20metrics%20displayed%2C%20professional%20environment%20with%20warm%20lighting%2C%20showing%20the%20intersection%20of%20business%20and%20social%20change&width=600&height=400&seq=project3&orientation=landscape",
-      tags: ["Animation d'atelier", "Gestion de projet", "Modèles Économiques"]
+      title: "Optimisation des Missions au Service du Personnel",
+      description: "Participation à un projet de restructuration au Conseil départemental, visant à réorganiser les postes et les missions, améliorer les procédures internes et accompagner les agents dans le changement.ses sociales.",
+      longDescription: `Contexte :
+                      Lors de mon stage au Conseil départemental, j'ai participé à une mission de restructuration interne touchant à la répartition des tâches, aux fonctions occupées et à l'efficacité globale des services.
+
+                      Objectif :
+                      Optimiser le fonctionnement des services en redéfinissant les missions de certains postes, en supprimant ou fusionnant d'autres, et en améliorant les procédures existantes.
+
+                      Déroulement :
+                      Participation à plusieurs réunions de travail avec l'équipe encadrante pour analyser les besoins de restructuration.
+                      Réalisation d'enquêtes internes pour recueillir le ressenti, les besoins et les suggestions du personnel.
+                      Collaboration à la mise en place et au suivi des entretiens individuels avec les agents concernés par les changements.
+                      Contribution à la refonte des fiches de poste et à la clarification des rôles de chacun.
+                      Aide à la rédaction de comptes rendus, de documents de synthèse, et suivi administratif des démarches liées à la restructuration.
+                      Veille à l'accompagnement humain du changement : écoute, communication, et relais d'information entre les agents et la hiérarchie.
+
+                     ésultat :
+Une meilleure répartition des missions, des procédures de travail clarifiées, et un dialogue renforcé entre la direction et les agents. Le projet a contribué à fluidifier les échanges et à améliorer la cohésion d'équipe.`,
+      image: "../assets/images/OIP.webp",
+      tags: ["Travail en équipe", "Observation", "Suivi administratif"]
     }
   ];
 

@@ -1,7 +1,43 @@
-import React from 'react';
-import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaLinkedin, FaGithub, FaTwitter } from 'react-icons/fa';
+import React, { useState } from 'react';
+import {
+  FaEnvelope, FaPhone, FaMapMarkerAlt, FaLinkedin
+} from 'react-icons/fa';
 
 const Contact = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
+  const [message, setMessage] = useState("");
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    const formData = new FormData();
+    formData.append("nom", name);
+    formData.append("email", email);
+    formData.append("telephone", phone);
+    formData.append("message", message);
+
+    try {
+      const response = await fetch("https://myriam-bonnaire.fr/api/traitement.php", {
+        method: "POST",
+        body: formData,
+      });
+
+      const result = await response.text();
+      alert(result);
+
+      // Réinitialiser les champs
+      setName("");
+      setEmail("");
+      setPhone("");
+      setMessage("");
+    } catch (error) {
+      console.error("Erreur :", error);
+      alert("Une erreur est survenue. Veuillez réessayer.");
+    }
+  };
+
   return (
     <section className="py-20 bg-white dark:bg-gray-900">
       <div className="container mx-auto px-6">
@@ -16,12 +52,14 @@ const Contact = () => {
           {/* Contact Form */}
           <div className="bg-gray-50 dark:bg-gray-800 p-8 rounded-xl shadow-sm">
             <h3 className="text-2xl font-semibold mb-6 text-gray-800 dark:text-white">Envoyez-moi un message</h3>
-            <form>
+            <form onSubmit={handleSubmit}>
               <div className="mb-6">
                 <label htmlFor="name" className="block text-gray-700 dark:text-gray-300 mb-2">Nom</label>
                 <input
                   type="text"
                   id="name"
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
                   className="w-full px-4 py-3 rounded-lg border-2 border-gray-200 dark:border-gray-700 focus:border-[#8B0000] focus:ring focus:ring-[#8B0000] focus:ring-opacity-50 transition-all duration-300 outline-none dark:bg-gray-700 text-white dark:text-white placeholder:text-white"
                   placeholder="Votre nom"
                 />
@@ -31,6 +69,8 @@ const Contact = () => {
                 <input
                   type="email"
                   id="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
                   className="w-full px-4 py-3 rounded-lg border-2 border-gray-200 dark:border-gray-700 focus:border-[#8B0000] focus:ring focus:ring-[#8B0000] focus:ring-opacity-50 transition-all duration-300 outline-none dark:bg-gray-700 text-white dark:text-white placeholder:text-white"
                   placeholder="Votre email"
                 />
@@ -40,6 +80,8 @@ const Contact = () => {
                 <input
                   type="tel"
                   id="phone"
+                  value={phone}
+                  onChange={(e) => setPhone(e.target.value)}
                   className="w-full px-4 py-3 rounded-lg border-2 border-gray-200 dark:border-gray-700 focus:border-[#8B0000] focus:ring focus:ring-[#8B0000] focus:ring-opacity-50 transition-all duration-300 outline-none dark:bg-gray-700 text-white dark:text-white placeholder:text-white"
                   placeholder="Votre numéro de téléphone"
                 />
@@ -49,6 +91,8 @@ const Contact = () => {
                 <textarea
                   id="message"
                   rows={5}
+                  value={message}
+                  onChange={(e) => setMessage(e.target.value)}
                   className="w-full px-4 py-3 rounded-lg border-2 border-gray-200 dark:border-gray-700 focus:border-[#8B0000] focus:ring focus:ring-[#8B0000] focus:ring-opacity-50 transition-all duration-300 outline-none dark:bg-gray-700 text-white dark:text-white placeholder:text-white"
                   placeholder="Votre message"
                 ></textarea>
@@ -99,14 +143,8 @@ const Contact = () => {
             <div className="mt-10">
               <h4 className="font-semibold mb-4 text-gray-800 dark:text-white">Réseaux sociaux</h4>
               <div className="flex space-x-4">
-                <a href="#" className="bg-[#8B0000]/10 dark:bg-[#8B0000]/20 p-3 rounded-full text-[#8B0000] dark:text-[#8B0000]/80 hover:bg-[#8B0000]/20 dark:hover:bg-[#8B0000]/30 transition-colors duration-300">
+                <a href="https://fr.linkedin.com/in/myriam-bonnaire-505b02341" target="_blank" rel="noopener noreferrer" className="bg-[#8B0000]/10 dark:bg-[#8B0000]/20 p-3 rounded-full text-[#8B0000] dark:text-[#8B0000]/80 hover:bg-[#8B0000]/20 dark:hover:bg-[#8B0000]/30 transition-colors duration-300">
                   <FaLinkedin className="text-xl" />
-                </a>
-                <a href="#" className="bg-[#8B0000]/10 dark:bg-[#8B0000]/20 p-3 rounded-full text-[#8B0000] dark:text-[#8B0000]/80 hover:bg-[#8B0000]/20 dark:hover:bg-[#8B0000]/30 transition-colors duration-300">
-                  <FaGithub className="text-xl" />
-                </a>
-                <a href="#" className="bg-[#8B0000]/10 dark:bg-[#8B0000]/20 p-3 rounded-full text-[#8B0000] dark:text-[#8B0000]/80 hover:bg-[#8B0000]/20 dark:hover:bg-[#8B0000]/30 transition-colors duration-300">
-                  <FaTwitter className="text-xl" />
                 </a>
               </div>
             </div>
@@ -117,4 +155,4 @@ const Contact = () => {
   );
 };
 
-export default Contact; 
+export default Contact;
